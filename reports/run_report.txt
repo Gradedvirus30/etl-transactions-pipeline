@@ -1,0 +1,10 @@
+
+ETL RUN REPORT
+
+Total Records: 10
+
+Valid Records: 4
+Quarantined Records: 3
+Rejected Records: 3
+
+Success Rate: 40.00%

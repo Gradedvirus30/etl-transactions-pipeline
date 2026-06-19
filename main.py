@@ -2,6 +2,7 @@ from etl.extract import extract_csv
 from etl.transform import transform_transactions
 from etl.load import load_to_postgres
 from etl.logger import logger
+from etl.metrics import generate_report
 
 
 from etl.config import DB_URL
@@ -19,6 +20,13 @@ if __name__ == "__main__":
     f"Quarantine={len(quarantine_df)} "
     f"Reject={len(reject_df)}"
     )
+    generate_report(
+    len(df),
+    len(valid_df),
+    len(quarantine_df),
+    len(reject_df)
+    )
+    
 
 
     load_to_postgres(
