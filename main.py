@@ -1,3 +1,4 @@
+import sys
 from etl.extract import extract_csv
 from etl.transform import transform_transactions
 from etl.load import load_to_postgres
@@ -10,7 +11,13 @@ from etl.config import DB_URL
 
 if __name__ == "__main__":
     logger.info("Pipeline started")
-    df = extract_csv("data/raw/transactions.csv")
+    
+    file_name = sys.argv[1] if len(sys.argv) > 1 else "transactions.csv"
+    file_path = f"data/raw/{file_name}"
+
+    logger.info(f"Input file: {file_name}")
+    
+    df = extract_csv(file_path)
     logger.info(f"Extracted {len(df)} records")
 
 

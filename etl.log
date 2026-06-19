@@ -6,3 +6,9 @@
 2026-06-19 12:04:50,980 | INFO | Extracted 10 records
 2026-06-19 12:04:51,004 | INFO | Valid=4 Quarantine=3 Reject=3
 2026-06-19 12:04:51,329 | INFO | Pipeline completed successfully
+2026-06-19 12:29:07,085 | INFO | Pipeline started
+2026-06-19 12:33:58,671 | INFO | Pipeline started
+2026-06-19 12:33:58,671 | INFO | Input file: transactions.csv
+2026-06-19 12:33:58,687 | INFO | Extracted 10 records
+2026-06-19 12:33:58,714 | INFO | Valid=4 Quarantine=3 Reject=3
+2026-06-19 12:33:59,177 | INFO | Pipeline completed successfully
