@@ -3,7 +3,8 @@ from etl.transform import transform_transactions
 from etl.load import load_to_postgres
 
 
-DB_URL = "postgresql://postgres:M%40may2006@localhost:5432/etl_db"
+from etl.config import DB_URL
+print(DB_URL)
 
 if __name__ == "__main__":
     df = extract_csv("data/raw/transactions.csv")
