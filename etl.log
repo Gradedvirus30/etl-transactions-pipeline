@@ -1,0 +1,4 @@
+2026-06-19 11:52:52,015 | INFO | Pipeline started
+2026-06-19 11:52:52,029 | INFO | Extracted 10 records
+2026-06-19 11:52:52,057 | INFO | Valid=4 Quarantine=3 Reject=3
+2026-06-19 11:52:52,395 | INFO | Pipeline completed successfully
