@@ -12,3 +12,20 @@
 2026-06-19 12:33:58,687 | INFO | Extracted 10 records
 2026-06-19 12:33:58,714 | INFO | Valid=4 Quarantine=3 Reject=3
 2026-06-19 12:33:59,177 | INFO | Pipeline completed successfully
+2026-06-19 12:42:07,099 | INFO | Pipeline started
+2026-06-19 12:42:07,100 | INFO | Input file: large_transactions.csv
+2026-06-19 12:42:07,108 | INFO | Extracted 1000 records
+2026-06-19 12:42:07,122 | INFO | Valid=899 Quarantine=57 Reject=44
+2026-06-19 12:42:07,653 | INFO | Pipeline completed successfully
+2026-06-19 12:47:09,810 | INFO | Pipeline started
+2026-06-19 12:47:09,810 | INFO | Input file: large_transactions.csv
+2026-06-19 12:47:09,828 | INFO | Extracted 1000 records
+2026-06-19 12:47:09,859 | INFO | Valid=899 Quarantine=57 Reject=44
+2026-06-19 12:47:10,359 | INFO | Pipeline completed successfully
+2026-06-19 12:47:10,360 | INFO | Pipeline runtime: 0.55 seconds
+2026-06-19 12:48:48,833 | INFO | Pipeline started
+2026-06-19 12:48:48,833 | INFO | Input file: large_transactions.csv
+2026-06-19 12:48:48,903 | INFO | Extracted 10000 records
+2026-06-19 12:48:48,918 | INFO | Valid=8971 Quarantine=486 Reject=543
+2026-06-19 12:48:49,560 | INFO | Pipeline completed successfully
+2026-06-19 12:48:49,560 | INFO | Pipeline runtime: 0.73 seconds

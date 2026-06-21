@@ -1,10 +1,10 @@
 
 ETL RUN REPORT
 
-Total Records: 10
+Total Records: 10000
 
-Valid Records: 4
-Quarantined Records: 3
-Rejected Records: 3
+Valid Records: 8971
+Quarantined Records: 486
+Rejected Records: 543
 
-Success Rate: 40.00%
+Success Rate: 89.71%

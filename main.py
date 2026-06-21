@@ -1,4 +1,5 @@
 import sys
+import time
 from etl.extract import extract_csv
 from etl.transform import transform_transactions
 from etl.load import load_to_postgres
@@ -10,13 +11,14 @@ from etl.config import DB_URL
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     logger.info("Pipeline started")
     
     file_name = sys.argv[1] if len(sys.argv) > 1 else "transactions.csv"
     file_path = f"data/raw/{file_name}"
 
     logger.info(f"Input file: {file_name}")
-    
+
     df = extract_csv(file_path)
     logger.info(f"Extracted {len(df)} records")
 
@@ -54,3 +56,12 @@ if __name__ == "__main__":
         DB_URL
     )
     logger.info("Pipeline completed successfully")
+    end_time = time.time()
+
+    runtime = end_time - start_time
+
+    print(f"Pipeline runtime: {runtime:.2f} seconds")
+
+    logger.info(
+        f"Pipeline runtime: {runtime:.2f} seconds"
+    )
